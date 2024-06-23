@@ -133,6 +133,10 @@ img {
     padding: 0;
     fill: #2e2f42;
   }
+  .mobile-open-btn {
+    background-color: transparent;
+    border: none;
+  }
   .mobile-menu-nav-container {
     display: flex;
     flex-direction: column;
@@ -150,6 +154,9 @@ img {
   }
   .active {
     color: #404bbf;
+  }
+  .address {
+    display: none;
   }
   .mobile-address {
     font-style: normal;
@@ -425,8 +432,8 @@ img {
 
 /* ========== BENEFITS STYLES ========== */
 .benefits {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .benefits-list-icon {
   display: none;
@@ -462,6 +469,7 @@ img {
   margin-bottom: 8px;
 }
 .benefits-list-text {
+  font-weight: 500;
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
@@ -504,9 +512,6 @@ img {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-  }
-  .benefits-list-text {
-    font-weight: 400;
   }
 }
 
@@ -633,6 +638,17 @@ img {
 }
 .portfolio-overlay-text {
   position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-list-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -721,7 +737,6 @@ img {
   max-width: 288px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .logo-footer {
   font-family: "Raleway", sans-serif;
