@@ -513,6 +513,9 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
   }
+  .benefits-list-text {
+    font-weight: 400;
+  }
 }
 
 /* ========== TEAM STYLES ========== */
